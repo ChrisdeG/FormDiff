@@ -1,12 +1,15 @@
-**Form Difference Widget**
+Form Difference Widget
+======================
 
 Client side widget that show differences between attributes
 
-**Typical usage scenario**
+Typical usage scenario
+----------------------
 
 Approving of changes after import updates. Normally the same entities in snippet on left and right side of the screen.
 
-**Features and limitations**
+Features and limitations
+------------------------
 
 1.  Works only for labels, inputs and dropdowns. No custom widgets or other standard widgets.
 
@@ -18,37 +21,35 @@ Approving of changes after import updates. Normally the same entities in snippet
 
 5.  Only one class is assigned per difference
 
-**Installation**
+Installation
+------------
 
 Place the widget on the form. In case of tab, place it on all tab containers.
 
-**Configuration**
+Configuration
+-------------
 
-Select class
-------------
+### Select class
 
 Give a the fields that has to be compared a class. This class is by default “Compare”
 
 Give fields that must be compared a unique class starting with the attribute prefix, by default “attr\_”. For example attr\_customername.
 
-Apply class
------------
+### Apply class
 
 Class that will be applied when fields differ. Add this class to your ccs-files manually!
 
-Apply to 
----------
+### Apply to 
 
 Apply css class to either the left colum, right colum or both.
 
-Apply node
-----------
+### Apply node
 
 The css class can be applied to the parent of the selected node, node itself, or the form-control. The form-control is the &lt;input&gt;, &lt;label&gt; or &lt;select&gt; itself.
 
-Tab indicator
--------------
+### Tab indicator
 
 Will mark the surrounding tab-container with a red circle if any changes found.
 
-**Known bugs**
+Known bugs
+----------
