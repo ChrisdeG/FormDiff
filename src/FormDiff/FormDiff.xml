@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="FormDiff.widget.FormDiff" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Form Difference</name>
+    <description>Hightlight differences in page data by assigning css.</description> 
+	<icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABXElEQVR42oXSPyiFURjH8fP6s2CQTAqzIiVWZJCBiMJiJBkpDAYbi65BBmwm00VJoq4/mzApG1E2mWTAdX2f7u/U6XX/nPp0e897zu8873Nu5Jxrwi7aELnseEA/Hl2RYRtu8I5VpDU/h1Z046lYwC+GsR/MLyjwpViIBWQwhINg3jbNoxot+NG8rT3EFL7CAPveoxwHlGrzEu5RjjXcYgzfPqAPJ9pkpW+qfH+qVXSh52OtT2I8DLCO12Ed9ZjQ4njAIga15jIMsD5MB+W/6SZeYwF+9ODMB9hDSi/stwKjeA4qsJsYQULrunAeuf8lWul7vst6v4JJXGNW1TX7gLQ+4TTPVWckCuaWbbMPuNJ1JYJTbZSg1zot27o+69MH2n1AA7bQoU1+lKEq6E+tGr0T70G+0am+VOIzx3sLSBUKqHHZP5OdmIy9s+pm0FgowMYANvSZ8cbe2Y39AfLKW6nH518pAAAAAElFTkSuQmCC</icon>
+    <properties>
+        <property key="selectclass" type="string" required="true" defaultValue="Compare">
+            <caption>Select class</caption>
+            <category>Difference</category>
+            <description>Class to find all fields to compare.</description>
+        </property>
+        <property key="diffclass" type="string" required="true" defaultValue="">
+            <caption>Apply class</caption>
+            <category>Difference</category>
+            <description>Class that is applied when a difference is found.</description> 
+        </property>		
+        <property key="attrprefix" type="string" required="true" defaultValue="attr_">
+            <caption>Attribute prefix</caption>
+            <category>Difference</category>
+            <description>To identify you have to add a class to every field. Start with this prefix.</description> 
+        </property>			
+        <property key="applymethod" type="enumeration" required="true" defaultValue="first">
+            <caption>Apply to</caption>
+            <category>Difference</category>
+            <description>Apply class to first, last or both items.</description> 
+            <enumerationValues>
+                <enumerationValue key="first">First</enumerationValue>
+                <enumerationValue key="last">Last</enumerationValue>
+                <enumerationValue key="both">Both</enumerationValue>
+            </enumerationValues>			
+        </property>		
+        <property key="applynode" type="enumeration" required="true" defaultValue="formcontrol">
+            <caption>Applynode</caption>
+            <category>Difference</category>
+            <description>Apply class to node (div), parent (td/div), form-control (mendix widget).</description> 
+            <enumerationValues>
+                <enumerationValue key="node">Node</enumerationValue>
+                <enumerationValue key="parent">Parent</enumerationValue>
+                <enumerationValue key="formcontrol">Form control</enumerationValue>
+            </enumerationValues>			
+        </property>		
+        <property key="marktab" type="boolean" required="true" defaultValue="true">
+            <caption>Tab indicator</caption>
+            <category>Difference</category>
+            <description>Show an indicator on the tab if in a tab container.</description>
+        </property>		
+    </properties>
+</widget>
